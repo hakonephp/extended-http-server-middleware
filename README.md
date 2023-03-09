@@ -2,6 +2,8 @@
 
 This package provides a useful interface to [PSR-15] compatible purpose-specific middleware.
 
+This interface was designed for Hakone, but is compatible with all other PSR-15 middleware dispatchers. All middleware that implements this interface satisfies the [Liskov substitution principle].
+
 ## `RequestInterceptionMiddleware`
 
 This specialized middleware only touches the request and asserts that it will return the response returned by the request handler as-is.
@@ -80,4 +82,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+[Liskov substitution principle]: https://en.wikipedia.org/wiki/Liskov_substitution_principle
 [PSR-15]: https://www.php-fig.org/psr/psr-15/
