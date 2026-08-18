@@ -8,9 +8,7 @@
         "psr/http-server-middleware": "^1.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.10",
-        "phpstan/phpstan-strict-rules": "^1.5",
-        "symplify/easy-coding-standard": "^11.2"
+        "bamarni/composer-bin-plugin": "^1.9"
     },
     "autoload": {
         "psr-4": {
@@ -18,6 +16,15 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        }
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": true,
+            "forward-command": true
+        }
     }
 }
