@@ -1,2 +1,7 @@
 parameters:
-	ignoreErrors: []
+	ignoreErrors:
+		-
+			message: '#^Parameter \#2 \$handler \(Hakone\\Http\\Server\\UntouchableResponseHandler\) of method Hakone\\Http\\Server\\RequestInterceptionMiddleware\:\:process\(\) should be contravariant with parameter \$handler \(Psr\\Http\\Server\\RequestHandlerInterface\) of method Psr\\Http\\Server\\MiddlewareInterface\:\:process\(\)$#'
+			identifier: method.childParameterType
+			count: 1
+			path: src/RequestInterceptionMiddleware.php
