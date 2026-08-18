@@ -1,10 +1,22 @@
 # Extended PSR-15 HTTP middleware interfaces 🏃‍♀️
 
+[![Package version](https://img.shields.io/packagist/v/hakone/extended-http-server-middleware.svg?style=flat)](https://packagist.org/packages/hakone/extended-http-server-middleware)
+[![Build Status](https://github.com/hakonephp/extended-http-server-middleware/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/hakonephp/extended-http-server-middleware/actions)
+[![Downloads this Month](https://img.shields.io/packagist/dm/hakone/extended-http-server-middleware.svg)](https://packagist.org/packages/hakone/extended-http-server-middleware)
+
 This package provides a useful interface to [PSR-15] compatible purpose-specific middleware.
 
 This interface was designed for Hakone, but is compatible with all other PSR-15 middleware dispatchers. All middleware that implements this interface satisfies the [Liskov substitution principle].
 
-## `RequestInterceptionMiddleware`
+## Install
+
+```
+composer require hakone/extended-http-server-middleware
+```
+
+## Usage
+
+### `RequestInterceptionMiddleware`
 
 This specialized middleware only touches the request and asserts that it will return the response returned by the request handler as-is.
 
