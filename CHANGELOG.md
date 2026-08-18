@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- Initial release of the PSR-15 request-interception middleware interfaces, requiring PHP 8.2 and `hakone/untouchable-psr7` `^1.1`.
+- Initial release of the PSR-15 request-interception middleware interfaces, requiring PHP 8.2 and `hakone/untouchable-psr7` `^1.1` ([#1](https://github.com/hakonephp/extended-http-server-middleware/pull/1)).
 
 [Unreleased]: https://github.com/hakonephp/extended-http-server-middleware/compare/0.1.0...HEAD
 [0.1.0]: https://github.com/hakonephp/extended-http-server-middleware/releases/tag/0.1.0
